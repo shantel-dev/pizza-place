@@ -1,5 +1,5 @@
 .landing{
-    background-color: antiquewhite;
+    background-color: rgb(229, 219, 255);
     background-size: cover;
     height: 200px;
     font-size: 5rem;
@@ -7,4 +7,7 @@
 }
 .menu{
     padding-top: 15px;
+    background-color: rgb(149, 153, 212);
+    background-size: cover;
+    height: 600px;
 }
