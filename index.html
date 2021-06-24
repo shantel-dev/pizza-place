@@ -83,10 +83,21 @@
                     <input value="100" type="checkbox" id="desiredtoppings">Capers
 
 
-                    <label for="">Select amount</label>
+                    <label for="">Select amount of pizza</label>
                     <input class="form-control form-group" type="text" id="number">
                     <button name="button" type="submit" id="submit" value="Check-out"
                         onclick="calcTotalPrice()">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h2>If you want your order delivered, fill in the required details.</h2>
+                <form id="deliver">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" name="" id="name" required="required">
+                    <label for="location">Location</label>
+                    <input class="form-control" type="text" id="location" placeholder="location.....">
+                    <button type="submit" name="button" id="submit">submit</button>
                 </form>
             </div>
         </div>
