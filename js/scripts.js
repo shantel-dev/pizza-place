@@ -75,3 +75,23 @@ function capsicum() {
     }
     return parseInt(capsicum);
 }
+
+function calcTotal(e) {
+    event.preventDefault();
+    var totalCost = (getCostOfSize() + getCostOfCrust() + broccolini()) * (getAmount());
+
+        console.log(totalCost);
+    alert("Thank you, your order which is" + getAmount() + "pizza(s) has been recorded.Your total cost will be" + totalCost +".")
+}
+
+$(document).ready(function () {
+    $("#delivery").submit(function () {
+
+        var name = $("input#name").val();
+        var location = $("input#location").val();
+
+        alert("Hello " + name + ". Your order has been received and will be delivered to " +  location + " within thirty five minutes.The delivery will cost ksh 300/= Thank you for dining with us.");
+        
+    });
+    
+});
